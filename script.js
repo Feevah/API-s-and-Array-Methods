@@ -56,7 +56,7 @@ function calculateTotal() {
 	const wealth = data.reduce((acc, user) => (acc += user.money), 0);
 
 	const wealthEl = document.createElement('div');
-	wealth.innerHTML = `<h3>Total Wealth: <strong>${formatMoney(wealth)}</strong></h3>`;
+	wealthEl.innerHTML = `<h3>Total Wealth: <strong>${formatMoney(wealth)}</strong></h3>`;
 	main.appendChild(wealthEl);
 }
 
